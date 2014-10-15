@@ -5,6 +5,9 @@ Style guide for projects that use LESS
 
 ##Style
 
+####IDs vs Classes
+If a style is used only *once* on the page use an ID otherwise use a class. If you are not sure, go with a class instead of ID. 
+
 ####Naming Conventions
 Class names should be kept short and use dashes to seperate words. As a rule of thumb, try keep your class numbers under 2 words, 3 max. 
 
@@ -24,3 +27,6 @@ Class names should be kept short and use dashes to seperate words. As a rule of 
 ```
 
 ##Organization
+
+####Modularization
+Keep your your LESS modular. For example, if you home and a landing page, create 2 separate LESS files. 

@@ -91,6 +91,22 @@ Space variables are your friends. Your designer will thank you for this.
 @space-x-small: 5px;
 ```
 
+####Z-Index
+Instead of using random z-indexes in hopes of achieving the effect you desire, create variables that help you later your design.
+```
+@z-index-1:   100;
+@z-index-2:   200;
+@z-index-3:   300;
+@z-index-4:   400;
+@z-index-5:   500;
+@z-index-6:   600;
+@z-index-7:   700;
+@z-index-8:   800;
+@z-index-9:   900;
+@z-index-10: 1000;
+```
+
+
 ###Mixins
 LESS is more. Get it? But seriously, mixins are *very* useful but don't abuse them! Instead of using mixins left and right, step back and consider whether it would be better as a class used in the HTML or as a mixin. 
 

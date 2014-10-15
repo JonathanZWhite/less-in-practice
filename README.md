@@ -94,7 +94,14 @@ Space variables are your friends. Your designer will thank you for this.
 ```
 
 ###Mixins
-
+LESS is more. Get it? But seriously, mixins are *very* useful but don't abuse them! Make use of parametric mixins.
+```
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+```
 
 ###Modularization
 Keep your your LESS modular. For example, instead of having over-sized `main.less`, split your less into files `home.less` or `landing.less` and import them into your `main.less`. 

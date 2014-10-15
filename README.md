@@ -31,7 +31,8 @@ Class names should be kept short and use dashes to seperate words. As a rule of 
 ####Variables
 Variables are a great way to maintain consistency across your designs. 
 
-**Colors**: RGBA is preferred over HEX. [CSS Color Converter](https://github.com/TheDutchCoder/ColorConvert) is a great Sublime plugin for converting your colors from hex -> rgba -> hsla. 
+#####**Colors**
+RGBA is preferred over HEX. [CSS Color Converter](https://github.com/TheDutchCoder/ColorConvert) is a great Sublime plugin for converting your colors from hex -> rgba -> hsla. 
 ```
 @light-blue: rgba(111, 203, 250, 1.0);
 @medium-blue: rgba(0, 182, 248, 1.0);

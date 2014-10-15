@@ -28,5 +28,23 @@ Class names should be kept short and use dashes to seperate words. As a rule of 
 
 ##Organization
 
+####
+
 ####Modularization
 Keep your your LESS modular. For example, instead of having over-sized `main.less`, split your less into files `home.less` or `landing.less` and import them into your `main.less`. 
+
+```
+app/
+  |- src/
+  |  |- app/
+  |  |  |- home
+  |  |  |  |- HomeController.js
+  |  |  |  |- home.tpl.html  
+  |  |  |  |- home.less
+  |  |  |- landing
+  |  |  |  |- LandingController.js
+  |  |  |  |- landing.tpl.html  
+  |  |  |  |- landing.less
+  |  |- less/
+  |  |  |- main.less
+```

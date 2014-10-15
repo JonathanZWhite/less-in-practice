@@ -93,6 +93,8 @@ Space variables are your friends. Your designer will thank you for this.
 @space-x-small: 5px;
 ```
 
+###Mixins
+
 
 ###Modularization
 Keep your your LESS modular. For example, instead of having over-sized `main.less`, split your less into files `home.less` or `landing.less` and import them into your `main.less`. 
@@ -111,6 +113,20 @@ app/
   |  |  |  |- landing.less
   |  |- less/
   |  |  |- main.less
+```
+
+```
+// Modules
+@import 'colors.less';
+@import 'fonts.less';
+@import 'mixins.less';
+@import 'reset.less';
+
+// Modules
+@import '../app/home/home.less';
+@import '../app/landing/landing.less';
+@import '../app/config/config.less';
+@import '../app/dashboard/dashboard.less';
 ```
 
 ###Namespacing

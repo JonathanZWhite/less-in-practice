@@ -44,35 +44,16 @@ RGBA is preferred over HEX. [CSS Color Converter](https://github.com/TheDutchCod
 ```
 
 ####Fonts
-Keeping font variables is key to keeping your font-sizes and weights consistency.
+Assign font-sizes semantic meaning. That way, you'll be able to decide what font-size to use much easier.
 ```
-// Font Variables
+// Font Sizes (private)
 // --------------------------------------------------
-
-@display-color: rgba(0, 0, 0, 1);
 @display-size: 60px;
-@display-weight: 700;
-
-@headline-color: rgba(0, 0, 0, .87);
 @headline-size: 36px;
-@headline-weight: 500;
-```
-
-Font variables should be private. Use them in your class definitions for your fonts but don't expose them anywhere else. 
-```
-// Font Classes
-// --------------------------------------------------
-
-.display {
-    color: @display-color;
-    font-size: @display-size;
-    text-transform: uppercase;
-}
-
-.headline {
-    color: @headline-color;
-    font-size: @headline-size;
-}
+@title-size: 24px;
+@subhead-size: 18px;
+@body-size: 16px;
+@caption-size: 14px;
 ```
 
 Font weights should be decoupled from the fonts class decarations. That way, if you don't have to overwrite the font-weights later one a case by case basis.
@@ -85,6 +66,22 @@ Font weights should be decoupled from the fonts class decarations. That way, if 
 @fw-semi-bold
 @fw-bold
 ```
+
+Font variables should be private. Use them in your class definitions for your fonts but don't expose them anywhere else. 
+```
+// Font Classes
+// --------------------------------------------------
+
+.display {
+	font-size: @display-size;
+    	text-transform: uppercase;
+}
+
+.headline {
+	font-size: @headline-size;
+}
+```
+
 
 ####Spacing
 Space variables are your friends. Your designer will thank you for this.  

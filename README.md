@@ -78,7 +78,6 @@ Assigning font-sizes semantic meaning is a good way to help you decide what font
 ```
 // Font Sizes (private)
 // --------------------------------------------------
-
 @display-size: 60px;
 @headline-size: 36px;
 @title-size: 24px;
@@ -91,7 +90,6 @@ Unlike font-sizes, I keep my font-weights separate from my font class declaratio
 ```
 // Font Weights (public) 
 // --------------------------------------------------
-
 @fw-light      200
 @fw-normal:    400
 @fw-semi-bold: 500
@@ -102,7 +100,6 @@ Font classes are where you use your private font-size variables. Don't litter yo
 ```
 // Font Classes
 // --------------------------------------------------
-
 .display {
 	font-size: @display-size;
 	text-transform: uppercase;
@@ -118,7 +115,6 @@ Keeping your margin spaces consistent across your designs is key.
 ```
 // Margin and Spacing (public)
 // --------------------------------------------------
-
 @space-jumbo: 100px;
 @space-x-large: 50px;
 @space-large: 30px;

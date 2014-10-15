@@ -53,22 +53,6 @@ Keeping font variables is key to keeping your font-sizes and weights consistency
 @headline-color: rgba(0, 0, 0, .87);
 @headline-size: 36px;
 @headline-weight: 500;
-
-@title-size: 24px;
-@title-color: rgba(0, 0, 0, .87);
-@title-weight: 400;
-
-@subhead-color: rgba(0, 0, 0, .78);
-@subhead-size: 18px;
-@subhead-weight: 400;
-
-@body-color: rgba(0, 0, 0, .65);
-@body-size: 16px;
-@body-weight: 400;
-
-@caption-color: rgba(0, 0, 0, .54);
-@caption-size: 14px;
-@caption-weight: 400;
 ```
 
 

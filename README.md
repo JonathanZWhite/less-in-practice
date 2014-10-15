@@ -9,7 +9,7 @@ Style guide for projects that use LESS. (Work in progress)
 For styles that are used only *once* on the page, use an ID, otherwise use a class. If you're not sure, go with a class instead of an ID. Personally, I prefer using classes over IDs in most situations since classes reusable and help keep your code DRY. 
 
 ###Naming Conventions
-Naming convention can vary from team to team but the general guideline I follow is keep your class names short and use dashes to separate words. Just as a rule of thumb, I "try" keep my class numbers under 2 words, 3 max. 
+Naming convention can vary from team to team but the general guideline I follow is: keep your class names short and use dashes to separate words. Just as a rule of thumb, I "try" keep my class numbers under 2 words, 3 max. 
 
 ```
 .editor-tabs {
@@ -27,8 +27,7 @@ Naming convention can vary from team to team but the general guideline I follow 
 ```
 
 ###Styles and classes
-Keep your classes (within their namespaces) aphabetically organized. Similarly, styles should also be alphabetic. This should make your LESS more readable to developers who are looking at your CSS for the first time. Highlighting the styles you want to organize and pressing control-f5 should alphabatize them in Sublime. 
-
+Keep your classes, within their namespaces, alphabetically organized. Similarly, the styles within the class should also be alphabetic. Organizing in alphabetic order makes your LESS more readable to developers who are looking at your LESS for the first time. Quick tip: Sublime has a built in alphabatizer, simply highlight the styles you want to alphabatize and press control-f5.
 ```
 .webcam-inner {
 	border-radius: 50%;

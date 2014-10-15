@@ -55,6 +55,24 @@ Keeping font variables is key to keeping your font-sizes and weights consistency
 @headline-weight: 500;
 ```
 
+Font variables should be private. Use them in your class definitions for your fonts but don't expose them anywhere else. 
+```
+.display {
+    .lato-font;
+    color: @display-color;
+    font-size: @display-size;
+    font-weight: @display-weight;
+    text-transform: uppercase;
+}
+
+.headline {
+    .lato-font;
+    color: @headline-color;
+    font-size: @headline-size;
+    font-weight: @headline-weight;
+}
+```
+
 
 ###Modularization
 Keep your your LESS modular. For example, instead of having over-sized `main.less`, split your less into files `home.less` or `landing.less` and import them into your `main.less`. 

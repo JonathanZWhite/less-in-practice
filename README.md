@@ -79,6 +79,20 @@ Font variables should be private. Use them in your class definitions for your fo
 }
 ```
 
+####Spacing
+Space variables are your friends. 
+```
+// Margin and Spacing
+// --------------------------------------------------
+
+@space-jumbo: 100px;
+@space-x-large: 50px;
+@space-large: 30px;
+@space-medium: 25px;
+@space-small: 15px;
+@space-x-small: 5px;
+```
+
 
 ###Modularization
 Keep your your LESS modular. For example, instead of having over-sized `main.less`, split your less into files `home.less` or `landing.less` and import them into your `main.less`. 

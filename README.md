@@ -28,7 +28,7 @@ Class names should be kept short and use dashes to seperate words. As a rule of 
 
 ##Organization
 
-####
+####Variables
 
 ####Modularization
 Keep your your LESS modular. For example, instead of having over-sized `main.less`, split your less into files `home.less` or `landing.less` and import them into your `main.less`. 
@@ -50,7 +50,7 @@ app/
 ```
 
 ####Namespacing
-Namespace your styles by the module they belong to. In the past, I have tried the prefix your styles by the name of the module they belong to but ended up with unecessarily long class names. 
+Namespace your styles by the module they belong to. In the past, I have tried the prefix your styles by the name of the module they belong to but ended up with unecessarily long class names. The rule with this approach is to keep your nesting within the namespace to a minimum.
 
 ```
 .landing {

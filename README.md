@@ -28,6 +28,25 @@ Naming convention should follow the guidelines set by the language. Class names 
 
 ##Organization
 
+###Styles and classes
+Keep your classes (within their namespaces) aphabetically organized. Similarly, styles should also be alphabetic. This should make your LESS more readable to developers who are looking at your CSS for the first time. Highlighting the styles you want to organize and pressing control-f5 should alphabatize them in Sublime. 
+
+```
+.webcam-inner {
+	background-color: @slate-grey;
+	border-radius: 50%;
+	bottom: 0;
+	bottom: 0;
+	height: 5px;
+	left: 0;
+	margin: auto;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 5px;
+}
+```
+
 ###Variables
 Variables are a great way to maintain consistency across your designs. 
 

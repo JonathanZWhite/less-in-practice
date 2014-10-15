@@ -48,6 +48,7 @@ Keeping font variables is key to keeping your font-sizes and weights consistency
 ```
 // Font Variables
 // --------------------------------------------------
+
 @display-color: rgba(0, 0, 0, 1);
 @display-size: 60px;
 @display-weight: 700;
@@ -61,6 +62,7 @@ Font variables should be private. Use them in your class definitions for your fo
 ```
 // Font Classes
 // --------------------------------------------------
+
 .display {
     .lato-font;
     color: @display-color;

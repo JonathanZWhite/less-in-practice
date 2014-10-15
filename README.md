@@ -74,7 +74,7 @@ Font variables should be private. Use them in your class definitions for your fo
 
 .display {
 	font-size: @display-size;
-    	text-transform: uppercase;
+	text-transform: uppercase;
 }
 
 .headline {

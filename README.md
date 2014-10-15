@@ -66,15 +66,24 @@ Font variables should be private. Use them in your class definitions for your fo
 .display {
     color: @display-color;
     font-size: @display-size;
-    font-weight: @display-weight;
     text-transform: uppercase;
 }
 
 .headline {
     color: @headline-color;
     font-size: @headline-size;
-    font-weight: @headline-weight;
 }
+```
+
+Font weights should be decoupled from the fonts class decarations. That way, if you don't have to overwrite the font-weights later one a case by case basis.
+```
+// Font Weights
+// --------------------------------------------------
+
+@fw-light:
+@fw-normal:
+@fw-semi-bold
+@fw-bold
 ```
 
 ####Spacing

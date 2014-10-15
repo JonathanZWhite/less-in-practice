@@ -29,4 +29,4 @@ Class names should be kept short and use dashes to seperate words. As a rule of 
 ##Organization
 
 ####Modularization
-Keep your your LESS modular. For example, if you home and a landing page, create 2 separate LESS files. 
+Keep your your LESS modular. For example, instead of having over-sized main.less, split your less into files `home.less`, `landing.less`, etc. 

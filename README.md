@@ -43,10 +43,11 @@ Keep your classes, within their namespaces, alphabetically organized. Similarly,
 ```
 
 ###Spacing 
-You should use 4 spaces and use a separate line for each class to make it easier to identify bugs.
+Separate your classes that share styles out onto different lines. Doing this should help you identify issues or errors in your LESS quickly when given a line number. 
 ```
-.dash-panel,
-.logout {
+.login, 
+.logout,
+.signup {
 	bottom: 0;
 	color: rgba(255, 255, 255, 0.7);
 	position: absolute;
@@ -54,14 +55,12 @@ You should use 4 spaces and use a separate line for each class to make it easier
 }
 ```
 
-
 ##Organization
 
 ###Variables
-Variables are a great way to maintain consistency across your designs. 
 
 ####Colors
-RGBA is preferred over HEX. [CSS Color Converter](https://github.com/TheDutchCoder/ColorConvert) is a great Sublime plugin for converting your colors from hex to rgba and back. 
+I prefer RGBA over HEX but which one you use is entirely a matter of preference. Just remember, consistence is key. Bonus: Sublime has a great plugin for converting your colors from HEX to RGBA and back. [CSS Color Converter](https://github.com/TheDutchCoder/ColorConvert) 
 ```
 @light-blue: rgba(111, 203, 250, 1.0);
 @medium-blue: rgba(0, 182, 248, 1.0);
@@ -73,10 +72,11 @@ RGBA is preferred over HEX. [CSS Color Converter](https://github.com/TheDutchCod
 ```
 
 ####Fonts
-Assign font-sizes semantic meaning. That way, you'll be able to decide what font-size to use much easier.
+Assigning font-sizes semantic meaning is a good way to help you decide what font classes to use and where based on their purpose in your design. 
 ```
 // Font Sizes (private)
 // --------------------------------------------------
+
 @display-size: 60px;
 @headline-size: 36px;
 @title-size: 24px;
@@ -85,18 +85,18 @@ Assign font-sizes semantic meaning. That way, you'll be able to decide what font
 @caption-size: 14px;
 ```
 
-Font weights should be decoupled from the fonts class decarations. That way, if you don't have to overwrite the font-weights later one a case by case basis.
+Unlike font-sizes, I keep my font-weights separate from my font class declarations. That way, you don't have to overwrite the font-weights later on a more case by case basis/ 
 ```
-// Font Weights
+// Font Weights (public) 
 // --------------------------------------------------
 
-@fw-light:
-@fw-normal:
-@fw-semi-bold
-@fw-bold
+@fw-light      200
+@fw-normal:    400
+@fw-semi-bold: 500
+@fw-bold:      700
 ```
 
-Font variables should be private. Use them in your class definitions for your fonts but don't expose them anywhere else. 
+Font classes are where you use your private font-size variables. Don't litter your code with your private variables.  
 ```
 // Font Classes
 // --------------------------------------------------
@@ -111,9 +111,8 @@ Font variables should be private. Use them in your class definitions for your fo
 }
 ```
 
-
 ####Spacing
-Space variables are your friends. Your designer will thank you for this.  
+Keeping your margin spaces consistent across your designs is key. Your designer will thank you for this. 
 ```
 // Margin and Spacing
 // --------------------------------------------------

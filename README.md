@@ -33,12 +33,10 @@ Variables are a great way to maintain consistency across your designs.
 
 **colors.less**
 ```
-//blues
 @light-blue: rgba(111, 203, 250, 1.0);
 @medium-blue: rgba(0, 182, 248, 1.0);
 @dark-blue: rgba(2, 154, 228, 1.0);
 
-//greys
 @light-grey: rgba(226, 226, 226, 1);
 @medium-grey: rgba(255, 255, 255, .09);
 @dark-grey: rgba(49, 49, 49, 1);

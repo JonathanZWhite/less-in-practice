@@ -237,8 +237,13 @@ app/
 
 Especially on large projects with multiple developers, separating out your less files will help prevent conflicts. 
 ```
-// Modules
+// Constants and variables
 @import 'colors.less';
+@import 'globals.less';
+@import 'mixins.less';
+@import 'typography.less';
+
+// Modules
 @import 'fonts.less';
 @import 'mixins.less';
 @import 'reset.less';

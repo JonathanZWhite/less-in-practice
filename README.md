@@ -3,8 +3,10 @@ less-style-guide
 
 Style guide for projects that use LESS
 
+##Style
+
 ####Naming Conventions
-Class names should be kept short and use dashes to seperate words
+Class names should be kept short and use dashes to seperate words. As a rule of thumb, try keep your class numbers under 2 words, 3 max. 
 
 ```
 .editor-tabs {
@@ -20,3 +22,5 @@ Class names should be kept short and use dashes to seperate words
 	width: 95%;
 }
 ```
+
+##Organization

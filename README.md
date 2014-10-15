@@ -106,6 +106,29 @@ Instead of using random z-indexes in hopes of achieving the effect you desire, c
 @z-index-10: 1000;
 ```
 
+###Global Classes
+Instead of repeating yourself in your LESS, keep your code DRY with global classes.
+
+```
+// Input Boxes
+// --------------------------------------------------
+
+.btn {
+	border-radius: 40px;
+	cursor: pointer;
+	display: inline-block;
+}
+
+// Input Boxes
+// --------------------------------------------------
+
+.input-box {
+	border-radius: 2px;
+	height: 35px;
+	padding: 10px;
+	width: 100%;
+}
+```
 
 ###Mixins
 LESS is more. Get it? But seriously, mixins are *very* useful but don't abuse them! Instead of using mixins left and right, step back and consider whether it would be better as a class used in the HTML or as a mixin. 

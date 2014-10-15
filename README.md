@@ -31,7 +31,7 @@ Class names should be kept short and use dashes to seperate words. As a rule of 
 ###Variables
 Variables are a great way to maintain consistency across your designs. 
 
-####**Colors**
+####Colors
 RGBA is preferred over HEX. [CSS Color Converter](https://github.com/TheDutchCoder/ColorConvert) is a great Sublime plugin for converting your colors from hex -> rgba -> hsla. 
 ```
 @light-blue: rgba(111, 203, 250, 1.0);
@@ -42,6 +42,35 @@ RGBA is preferred over HEX. [CSS Color Converter](https://github.com/TheDutchCod
 @medium-grey: rgba(255, 255, 255, .09);
 @dark-grey: rgba(49, 49, 49, 1);
 ```
+
+####Fonts
+Keeping font variables is key to keeping your font-sizes and weights consistency.
+```
+@display-color: rgba(0, 0, 0, 1);
+@display-size: 60px;
+@display-weight: 700;
+
+@headline-color: rgba(0, 0, 0, .87);
+@headline-size: 36px;
+@headline-weight: 500;
+
+@title-size: 24px;
+@title-color: rgba(0, 0, 0, .87);
+@title-weight: 400;
+
+@subhead-color: rgba(0, 0, 0, .78);
+@subhead-size: 18px;
+@subhead-weight: 400;
+
+@body-color: rgba(0, 0, 0, .65);
+@body-size: 16px;
+@body-weight: 400;
+
+@caption-color: rgba(0, 0, 0, .54);
+@caption-size: 14px;
+@caption-weight: 400;
+```
+
 
 ###Modularization
 Keep your your LESS modular. For example, instead of having over-sized `main.less`, split your less into files `home.less` or `landing.less` and import them into your `main.less`. 

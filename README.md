@@ -67,19 +67,6 @@ Namespace your styles by the module they belong to. In the past, I have tried th
 		width: 50%;
 	}
 	
-	.navbar-text {
-		line-height: 80px;
-		text-align: right;
-	}
-	
-	.navbar-logo {
-		color: @smoke-white;
-		float: left;
-		font-size: 24px;
-		font-weight: 400;
-		line-height: 80px;
-	}
-	
 	background-color: @dark-grey;
 	height: 100%;
 	overflow: auto;

@@ -125,9 +125,7 @@ LESS is more. Get it? But seriously, mixins are *very* useful but don't abuse th
 }
 ```
 
-
-
-Make use of parametric mixins. 
+If you are going to use mixins liberally, use parametric mixins.
 ```
 .border-radius(@radius) {
   -webkit-border-radius: @radius;

@@ -94,7 +94,40 @@ Space variables are your friends. Your designer will thank you for this.
 ```
 
 ###Mixins
-LESS is more. Get it? But seriously, mixins are *very* useful but don't abuse them! Make use of parametric mixins.
+LESS is more. Get it? But seriously, mixins are *very* useful but don't abuse them! Instead of using mixins left and right, step back and consider whether it would be better as a class used in the HTML or as a mixin. 
+
+**Wrong**
+```
+.btn {
+	border-radius: 40px;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.btn-submit {
+	.btn;
+	font-size: 16px;
+	padding: 0px 40px;
+}
+```
+
+**Better**
+```
+.btn {
+	border-radius: 40px;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.btn-submit {
+	font-size: 16px;
+	padding: 0px 40px;
+}
+```
+
+
+
+Make use of parametric mixins. 
 ```
 .border-radius(@radius) {
   -webkit-border-radius: @radius;

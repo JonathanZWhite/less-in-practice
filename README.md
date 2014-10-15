@@ -90,10 +90,10 @@ Unlike font-sizes, I keep my font-weights separate from my font class declaratio
 ```
 // Font Weights (public) 
 // --------------------------------------------------
-@fw-light      200
-@fw-normal:    400
-@fw-semi-bold: 500
-@fw-bold:      700
+@fw-light:     200;
+@fw-normal:    400;
+@fw-semi-bold: 500;
+@fw-bold:      700;
 ```
 
 Font classes are where you use your private font-size variables. Don't litter your code with your private variables.  

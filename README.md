@@ -63,7 +63,7 @@ Namespace your styles by the module they belong to. In the past, I have tried th
 	.navbar-section {
 		float: left;
 		height: 100%;
-		padding: 0px @space-small 0px @space-small;
+		padding: 0px @space-small;
 		width: 50%;
 	}
 	

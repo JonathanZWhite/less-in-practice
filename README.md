@@ -9,9 +9,7 @@ Style guide for projects that use LESS. (Work in progress)
 For styles that are used only *once* on the page, use an ID, otherwise use a class. If you're not sure, go with a class instead of an ID. Personally, I prefer using classes over IDs in most situations since classes reusable and help keep your code DRY. 
 
 ###Naming Conventions
-Naming convention can vary from team to team but the general guideline I follow is 
-
-Naming convention should follow the guidelines set by the language. Class names should be short and use dashes to seperate words. As a rule of thumb, try keep your class names under 2 words, 3 max. 
+Naming convention can vary from team to team but the general guideline I follow is keep your class names short and use dashes to separate words. Just as a rule of thumb, I "try" keep my class numbers under 2 words, 3 max. 
 
 ```
 .editor-tabs {

@@ -33,7 +33,6 @@ Keep your classes (within their namespaces) aphabetically organized. Similarly, 
 
 ```
 .webcam-inner {
-	background-color: @slate-grey;
 	border-radius: 50%;
 	bottom: 0;
 	height: 5px;

@@ -36,7 +36,6 @@ Keep your classes (within their namespaces) aphabetically organized. Similarly, 
 	background-color: @slate-grey;
 	border-radius: 50%;
 	bottom: 0;
-	bottom: 0;
 	height: 5px;
 	left: 0;
 	margin: auto;

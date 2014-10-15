@@ -112,7 +112,6 @@ Instead of repeating yourself in your LESS, keep your code DRY with global class
 ```
 // Buttons
 // --------------------------------------------------
-
 .btn {
 	box-sizing: border-box;
 	border-radius: 2px;

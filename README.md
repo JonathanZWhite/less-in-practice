@@ -64,7 +64,6 @@ Font variables should be private. Use them in your class definitions for your fo
 // --------------------------------------------------
 
 .display {
-    .lato-font;
     color: @display-color;
     font-size: @display-size;
     font-weight: @display-weight;
@@ -72,7 +71,6 @@ Font variables should be private. Use them in your class definitions for your fo
 }
 
 .headline {
-    .lato-font;
     color: @headline-color;
     font-size: @headline-size;
     font-weight: @headline-weight;

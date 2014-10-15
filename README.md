@@ -80,7 +80,7 @@ Font variables should be private. Use them in your class definitions for your fo
 ```
 
 ####Spacing
-Space variables are your friends. 
+Space variables are your friends. Your designer will thank you for this.  
 ```
 // Margin and Spacing
 // --------------------------------------------------

@@ -110,20 +110,35 @@ Instead of using random z-indexes in hopes of achieving the effect you desire, c
 Instead of repeating yourself in your LESS, keep your code DRY with global classes.
 
 ```
-// Input Boxes
+// Buttons
 // --------------------------------------------------
 
 .btn {
-	border-radius: 40px;
+	box-sizing: border-box;
+	border-radius: 2px;
 	cursor: pointer;
 	display: inline-block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
 }
 
-// Input Boxes
+.btn-large {
+	height: 45px;
+	line-height: 50px;
+	padding: 0px 40px;
+	vertical-align: middle;
+}
+
+// Inputs
 // --------------------------------------------------
+.input {
+	border-radius: 2px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
 
 .input-box {
-	border-radius: 2px;
 	height: 35px;
 	padding: 10px;
 	width: 100%;

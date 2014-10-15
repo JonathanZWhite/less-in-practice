@@ -1,7 +1,7 @@
 less-style-guide
 ================
 
-Style guide for projects that use LESS
+Style guide for projects that use LESS. (Work in progress)
 
 ##Style
 

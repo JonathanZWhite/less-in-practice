@@ -62,6 +62,8 @@ Separate your classes that share styles out onto different lines. Doing this sho
 ####Colors
 I prefer RGBA over HEX but which one you use is entirely a matter of preference. Just remember, consistence is key. Bonus: Sublime has a great plugin for converting your colors from HEX to RGBA and back. [CSS Color Converter](https://github.com/TheDutchCoder/ColorConvert) 
 ```
+// Colors (public)
+// --------------------------------------------------
 @light-blue: rgba(111, 203, 250, 1.0);
 @medium-blue: rgba(0, 182, 248, 1.0);
 @dark-blue: rgba(2, 154, 228, 1.0);
@@ -112,9 +114,9 @@ Font classes are where you use your private font-size variables. Don't litter yo
 ```
 
 ####Spacing
-Keeping your margin spaces consistent across your designs is key. Your designer will thank you for this. 
+Keeping your margin spaces consistent across your designs is key. 
 ```
-// Margin and Spacing
+// Margin and Spacing (public)
 // --------------------------------------------------
 
 @space-jumbo: 100px;
@@ -141,8 +143,7 @@ Instead of using random z-indexes in hopes of achieving the effect you desire, c
 ```
 
 ###Global Classes
-Instead of repeating yourself in your LESS, keep your code DRY with global classes.
-
+Keep your code DRY with global classes.
 ```
 // Buttons
 // --------------------------------------------------
@@ -179,7 +180,7 @@ Instead of repeating yourself in your LESS, keep your code DRY with global class
 ```
 
 ###Mixins
-LESS is more. Get it? But seriously, mixins are *very* useful but don't abuse them! Instead of using mixins left and right, step back and consider whether it would be better as a class used in the HTML or as a mixin. 
+LESS is more. Get it? But seriously, mixins are *very* useful but don't abuse them! Instead of using mixins left and right, step back and consider whether it would be better as just a class or as a mixin. 
 
 **Wrong**
 ```
@@ -210,7 +211,7 @@ LESS is more. Get it? But seriously, mixins are *very* useful but don't abuse th
 }
 ```
 
-If you are going to use mixins liberally, use parametric mixins to generate polyfills.
+If you are going to use mixins liberally, use parametric mixins to generate dynamic styles.
 ```
 .border-radius(@radius) {
   -webkit-border-radius: @radius;
@@ -254,7 +255,7 @@ Especially on large projects with multiple developers, separating out your less 
 ```
 
 ###Namespacing
-Namespace your styles by the module they belong to. In the past, I have tried the prefix your styles by the name of the module they belong to but ended up with unecessarily long class names. The rule with this approach is to keep your nesting within the namespace to a minimum.
+Namespace your styles by the module they belong to. In the past, I have tried the prefix your styles by the name of the module they belong to but ended up with unecessarily long class names. The rule to follow with this approach is to keep your nesting within the namespace to a minimum.
 
 ```
 .landing {

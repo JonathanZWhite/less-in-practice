@@ -48,3 +48,44 @@ app/
   |  |- less/
   |  |  |- main.less
 ```
+
+####Namespacing
+Namespace your styles by the module they belong to. In the past, I have tried the prefix your styles by the name of the module they belong to but ended up with unecessarily long class names. 
+
+```
+.landing {
+	background-color: @dark-grey;
+	height: 100%;
+	overflow: auto;
+	text-align: center;
+	width: 100%;
+}
+
+.navbar {
+	height: 80px;
+	list-style-type: none;
+	width: 100%;
+}
+
+.navbar-section {
+	float: left;
+	height: 100%;
+	padding: 0px @space-small 0px @space-small;
+	width: 50%;
+}
+
+.navbar-text {
+	line-height: 80px;
+	text-align: right;
+}
+
+.navbar-logo {
+	color: @smoke-white;
+	float: left;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 80px;
+}
+```
+
+

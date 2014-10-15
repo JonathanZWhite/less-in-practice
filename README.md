@@ -26,8 +26,6 @@ Naming convention should follow the guidelines set by the language. Class names 
 }
 ```
 
-##Organization
-
 ###Styles and classes
 Keep your classes (within their namespaces) aphabetically organized. Similarly, styles should also be alphabetic. This should make your LESS more readable to developers who are looking at your CSS for the first time. Highlighting the styles you want to organize and pressing control-f5 should alphabatize them in Sublime. 
 
@@ -44,6 +42,21 @@ Keep your classes (within their namespaces) aphabetically organized. Similarly, 
 	width: 5px;
 }
 ```
+
+###Spacing 
+You should use 4 spaces and use a separate line for each class to make it easier to identify bugs.
+```
+.dash-panel,
+.logout {
+	bottom: 0;
+	color: rgba(255, 255, 255, 0.7);
+	position: absolute;
+	right: 45px;
+}
+```
+
+
+##Organization
 
 ###Variables
 Variables are a great way to maintain consistency across your designs. 

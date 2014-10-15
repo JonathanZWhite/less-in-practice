@@ -5,10 +5,10 @@ Style guide for projects that use LESS
 
 ##Style
 
-###IDs vs Classes
+####IDs vs Classes
 If a style is used only *once* on the page use an ID otherwise use a class. If you are not sure, go with a class instead of ID. 
 
-###Naming Conventions
+####Naming Conventions
 Class names should be kept short and use dashes to seperate words. As a rule of thumb, try keep your class numbers under 2 words, 3 max. 
 
 ```
@@ -28,10 +28,11 @@ Class names should be kept short and use dashes to seperate words. As a rule of 
 
 ##Organization
 
-###Variables
+####Variables
 Variables are a great way to maintain consistency across your designs. 
 
-**colors.less**
+**Colors**
+RGBA is preferred over HEX. [CSS Color Converter](https://github.com/TheDutchCoder/ColorConvert) is a great Sublime plugin for converting your colors from hex -> rgba -> hsla. 
 ```
 @light-blue: rgba(111, 203, 250, 1.0);
 @medium-blue: rgba(0, 182, 248, 1.0);

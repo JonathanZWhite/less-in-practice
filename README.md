@@ -115,6 +115,7 @@ app/
   |  |  |- main.less
 ```
 
+Especially on large projects with multiple developers, separating out your less files will help prevent conflicts. 
 ```
 // Modules
 @import 'colors.less';

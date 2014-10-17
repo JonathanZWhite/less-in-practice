@@ -64,13 +64,13 @@ I prefer RGBA over HEX but which one you use is entirely a matter of preference.
 ```
 // Colors (public)
 // --------------------------------------------------
-@light-blue: rgba(111, 203, 250, 1.0);
-@medium-blue: rgba(0, 182, 248, 1.0);
-@dark-blue: rgba(2, 154, 228, 1.0);
+@light-blue: rgb(111, 203, 250);
+@medium-blue: rgb(0, 182, 248);
+@dark-blue: rgb(2, 154, 228);
 
-@light-grey: rgba(226, 226, 226, 1);
-@medium-grey: rgba(255, 255, 255, .09);
-@dark-grey: rgba(49, 49, 49, 1);
+@light-grey: rgb(226, 226, 226);
+@medium-grey: rgb(255, 255, 255);
+@dark-grey: rgb(49, 49, 49);
 ```
 
 ####Fonts
@@ -78,12 +78,13 @@ Assigning font-sizes semantic meaning is a good way to help you decide what font
 ```
 // Font Sizes (private)
 // --------------------------------------------------
-@display-size: 60px;
-@headline-size: 36px;
-@title-size: 24px;
-@subhead-size: 18px;
-@body-size: 16px;
-@caption-size: 14px;
+@pn-h1-size: 60px;
+@pn-h2-size: 36px;
+@pn-h3-size: 24px;
+@pn-h4-size: 20px;
+@pn-h5-size: 18px;
+@pn-p-size:  16px;
+@pn-caption-size: 14px;
 ```
 
 Unlike font-sizes, I keep my font-weights separate from my font class declarations. That way, you don't have to overwrite the font-weights later on a more case by case basis/ 
@@ -100,13 +101,12 @@ Font classes are where you use your private font-size variables. Don't litter yo
 ```
 // Font Classes
 // --------------------------------------------------
-.display {
-	font-size: @display-size;
-	text-transform: uppercase;
+.pn-h1 {
+    font-size: @pn-h1-size;
 }
 
-.headline {
-	font-size: @headline-size;
+.pn-h2 {
+    font-size: @pn-h2-size;
 }
 ```
 
@@ -144,28 +144,23 @@ Keep your code DRY with global classes.
 // Buttons
 // --------------------------------------------------
 .btn {
-	box-sizing: border-box;
-	border-radius: 2px;
+	.border-radius(4px);
 	cursor: pointer;
 	display: inline-block;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 }
 
-.btn-large {
-	height: 45px;
-	line-height: 50px;
-	padding: 0px 40px;
-	vertical-align: middle;
+.btn-large-blue {
+	.pn-h4;
+	background: @brand-blue;
+	color: @white;
+	padding: 10px 50px;
 }
 
 // Inputs
 // --------------------------------------------------
 .input {
-	border-radius: 2px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+	.border-radius(2px);
+	.box-sizing;
 }
 
 .input-box {
